@@ -10,10 +10,10 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with UDM Techno Solutions on WhatsApp"
-      className="fixed bottom-16 right-6 z-50 w-16 h-16 bg-[#25D366] border-4 border-black rounded-full brutalist-shadow flex items-center justify-center hover:scale-110 transition-transform animate-pulse hover:animate-none"
+      className="fixed bottom-12 sm:bottom-16 right-4 sm:right-6 z-50 w-12 h-12 sm:w-16 sm:h-16 bg-[#25D366] border-2 sm:border-4 border-black rounded-full brutalist-shadow flex items-center justify-center hover:scale-110 transition-transform animate-pulse hover:animate-none"
     >
-      <iconify-icon icon="logos:whatsapp-icon" className="text-3xl" />
-      <span className="absolute -top-1 -right-2 w-5 h-5 bg-brand border-2 border-black rounded-full" />
+      <iconify-icon icon="logos:whatsapp-icon" className="text-2xl sm:text-3xl" />
+      <span className="absolute -top-1 -right-1 sm:-right-2 w-4 h-4 sm:w-5 sm:h-5 bg-brand border-2 border-black rounded-full" />
     </a>
   );
 }

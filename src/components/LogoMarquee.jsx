@@ -19,29 +19,25 @@ export default function LogoMarquee() {
   ];
 
   return (
-    <section className="py-16 border-b-4 border-black overflow-hidden">
-      
-      {/* Heading */}
-      <div className="max-w-7xl mx-auto px-6 text-center mb-10">
-        <p className="text-sm font-bold tracking-widest uppercase text-zinc-500">
+    <section className="py-10 sm:py-16 border-b-2 sm:border-b-4 border-black overflow-hidden">
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center mb-6 sm:mb-10">
+        <p className="text-xs sm:text-sm font-bold tracking-widest uppercase text-zinc-500">
           Trusted by industry leaders
         </p>
       </div>
 
-      {/* Marquee */}
       <div className="overflow-hidden">
-        <div className="flex w-max animate-marquee hover:[animation-play-state:paused] gap-16 grayscale hover:grayscale-0 transition-all duration-500">
-          
-          {/* Duplicate logos for seamless loop */}
+        <div className="flex w-max animate-marquee hover:[animation-play-state:paused] gap-8 sm:gap-16 grayscale hover:grayscale-0 transition-all duration-500">
           {[...logos, ...logos].map((logo, index) => (
             <img
               key={index}
               src={logo}
               alt={`logo-${index}`}
-              className="h-12 w-auto object-contain flex-shrink-0"
+              loading="lazy"
+              className="h-8 sm:h-12 w-auto object-contain flex-shrink-0"
             />
           ))}
-
         </div>
       </div>
 
